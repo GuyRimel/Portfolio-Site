@@ -2,3 +2,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.tanBackground {
+    background-color: tan;
+}
+
+.blueBackground {
+    background-color: lightblue;
+}
+
+.greenBackground {
+    background-color: lightgreen;
+}
+
+.topLogo {
+    background-image: linear-gradient(gray, black);
+    width: 300px;
+}
