@@ -11,18 +11,18 @@
 
         <!-- HEADER -- Logo and Navigation -->
         <header>
-            <img class="topLogo" src="img/KBLogoWithText.png" alt="logo">
+            <img class="topLogo" src="img/KBLogoWithText.png" alt="">
             
             <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
+                <ul role="menubar">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem">Home</a>
                     </li>
-                    <li>
-                        <a href="about.html">About</a>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem">About</a>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                    <li role="presentation">
+                        <a href="contact.html" role="menuitem">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -30,7 +30,9 @@
 
         <!-- Main Content -->
         <main>
-            <img src="http://www.placekitten.com/450/450" alt="contact page photo">
+            <div>
+                <img src="http://www.placekitten.com/450/450" alt="">
+            </div>
             <div>
                 <h1>A little about myself...</h1>
                 <br>
@@ -41,7 +43,35 @@
                 <p>
                     Morbi a dignissim metus. Maecenas laoreet, sem eget pulvinar semper, ante odio imperdiet orci, vel porta ligula eros rhoncus erat. Cras pulvinar porttitor mi vel hendrerit. Nullam vitae bibendum nulla. Duis id tincidunt magna. Phasellus at porta risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                 </p>
+                <br>
             </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Skills</td>
+                        <td>Years Experience</td>
+                        <td>Skills</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>3</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>2</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>1</td>
+                        <td>Beginner</td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
 
         <!-- Footer -->
@@ -55,5 +85,9 @@
                 <img width="40px" height="40px" src="img/icon/linkedin.svg" alt="LinkedIn">
             </div>
         </footer>
+
+        <!-- BOTTOM SCRIPTS -->
+        <script src="js/tota11y.min.js"></script>
+
     </body>
 </html>

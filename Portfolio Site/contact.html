@@ -11,18 +11,18 @@
 
         <!-- HEADER -- Logo and Navigation -->
         <header>
-            <img class="topLogo" src="img/KBLogoWithText.png" alt="logo">
+            <img class="topLogo" src="img/KBLogoWithText.png" alt="">
             
             <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
+                <ul role="menubar">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem">Home</a>
                     </li>
-                    <li>
-                        <a href="about.html">About</a>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem">About</a>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                    <li role="presentation">
+                        <a href="contact.html" role="menuitem">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -30,9 +30,9 @@
 
         <!-- Main Content -->
         <main>
-            <img src="http://www.placekitten.com/450/450" alt="contact page photo">
+            <img src="http://www.placekitten.com/450/450" alt="">
             <div>
-                <h2>Contact Info</h2>
+                <h1>Contact Info</h1>
                 <div>
                     Guy Rimel<br>
                     6703 82nd St.<br>
@@ -48,14 +48,14 @@
                 
                 <!-- contact form -->
                 <h3>Reach out!</h3>
-                <form action="" method="post">
-                    <label for="email">E-mail: </label>
-                    <input type="email" required>
+                <form action="" method="post" id="contact-form">
+                    <label for="contact-email" class="standard-label">E-mail: </label>
+                    <input type="email" id="contact-email" required>
                     
-                    <label for="tel">Telephone: </label>
-                    <input type="tel">
+                    <label for="tel" class="standard-label">Telephone: *###-###-####</label>
+                    <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
                     
-                    <label for="message">Message: </label>
+                    <label for="message" class="standard-label">Message: </label>
                     <textarea name="message" maxlength="240" required></textarea>
 
                     <input type="submit" value="Send message">
@@ -74,5 +74,9 @@
                 <img width="40px" height="40px" src="img/icon/linkedin.svg" alt="LinkedIn">
             </div>
         </footer>
+
+        <!-- BOTTOM SCRIPTS -->
+        <script src="js/tota11y.min.js"></script>
+
     </body>
 </html>
