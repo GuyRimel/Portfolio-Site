@@ -13,21 +13,32 @@ header {
     margin-bottom: 1em;
 }
 
-.topLogo {
-    background-image: linear-gradient(black, gray, black);
-    width: 300px;
-    border-radius: 25px;
-    margin: 2px;
-}
-
 img {
     border-radius: 25px;
     border: 2px solid black;
 }
 
+.topLogo {
+    background-image: linear-gradient(black, gray, black);
+    width: 300px;
+    border-bottom-left-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius:0px;
+    margin: 2px;
+}
+
 nav {
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
+    padding: 1em;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+}
+
+li {
+    list-style: none;
 }
 
 main {
