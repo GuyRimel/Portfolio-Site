@@ -5,9 +5,9 @@
         <title>Guy Rimel - Portfolio</title>
         <link rel="shortcut icon" href="img/icon/neutralEmoji.ico" type="image/x-icon">
         <!-- Style Links -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
 
     <body>
@@ -17,15 +17,15 @@
             <img class="topLogo" src="img/KBLogoWithText.png" alt="Logo for Guy Rimel">
             
             <nav>
-                <ul role="menubar">
+                <ul role="menubar" class="navigation-list">
                     <li role="presentation">
-                        <a href="index.html" role="menuitem">Home</a>
+                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
                     </li>
                     <li role="presentation">
-                        <a href="about.html" role="menuitem">About Myself</a>
+                        <a href="about.html" role="menuitem" class="navigation-list__item">About Myself</a>
                     </li>
                     <li role="presentation">
-                        <a href="contact.html" role="menuitem">Contact</a>
+                        <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -43,6 +43,8 @@
                     Here's a cliche (but helpful) website to see what I'm about. 
                 </p>
                 <a href="#">Check out some of my code</a>
+                <button type="button" class="button">Default Button</button>
+                <button type="button" class="button__secondary">Secondary Button</button>
             </div>
         </main>
 

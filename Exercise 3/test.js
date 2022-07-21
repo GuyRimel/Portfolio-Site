@@ -1,1 +1,0 @@
-const go_getter = "Guy Rimel"
