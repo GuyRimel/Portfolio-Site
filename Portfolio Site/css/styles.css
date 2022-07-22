@@ -1,9 +1,8 @@
 /* COLOR PALETTE 
 
 Text color: #222
-Dark: #6a7e61
-Medium: #cacec8
-Medium-Light (background): #e8ece6
+Dark: #2f6264
+Medium: #5f9ea0 (cadetblue)
 Very Light (whitesmoke): #f5f5f5
 
 */
@@ -13,12 +12,13 @@ Very Light (whitesmoke): #f5f5f5
     font-family: "roboto condensed", Arial, Helvetica, sans-serif;
     font-weight: 400;
     color: #222;
+    box-sizing: border-box !important;
     margin: 0px;
 }
 
 /* ELEMENTS */
 body {
-    background-color: #cacec8;
+    background-color: slategray;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -46,21 +46,21 @@ p {
 }
 
 header {
-    background-color: rgba(0, 0, 0, .5);
+    background-image: linear-gradient(#222, rgba(0,0,0,0.1));
     display: flex;
-    margin-bottom: 1em;
+    padding-bottom: 2px;
 }
 
 img {
-    border: 2px solid black;
-    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    border-radius: 1em;
 }
 
 nav {
-    background-color: #efefef;
+    background-color: rgba(255, 255, 255, 0.95);
     display: flex;
     align-items: center;
-    margin: 2px;
+    margin-bottom: 2px;
     margin-left: 0px;
     border-bottom-right-radius:1em;
     border-top-right-radius:1em;
@@ -90,31 +90,23 @@ a:visited {
 }
 
 a:hover, a:focus {
-    background-color: #cacec8;
+    background-color: rgba(0, 0, 0, .25);
     text-decoration: underline;
     border-radius: 1em;
-    color: rgb(81, 90, 0);
+    color: #fff;
     cursor: pointer;
 }
 
 a:active {
-    color: #fff;
-    background-color: #bacab2;
+    color: #222;
+    background-color: #fff;
 }
 
 main {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, .8);
     display: flex;
-    flex-direction: column;
-    padding: 12px;
-    margin-bottom: 1em;
-}
-
-footer {
-    background-color: rgba(0, 0, 0, .2);
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em;
+    flex-direction: row;
+    padding: 1em;
 }
 
 form {
@@ -124,10 +116,18 @@ form {
     flex-direction: column;
 }
 
+.page-footer {
+    background-color: rgba(0, 0, 0, .2);
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
 button {
     border: none;
     font-family: inherit;
-    background-color: #6a7e61;
+    background-color: rgb(49, 93, 136);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -148,9 +148,8 @@ button:active {
 
 /* CLASSES */
 .topLogo {
-    background-image: linear-gradient(#000, #88aa77, #000);
-    width: 300px;
-    resize: none;
+    background-image: linear-gradient(#000, rgba(255,255,255,0.5), #000);
+    width: 400px;
     border-bottom-left-radius:0px;
     border-top-left-radius:0px;
     border-bottom-right-radius:0px;
@@ -159,29 +158,64 @@ button:active {
 }
 
 .navigation-list {
-    border-top-right-radius: inherit;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 .navigation-list__item {
-    border-top-right-radius: inherit;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 .navigation-list__item--active {
-    border: 2px solid rgba(0, 0, 0, .2);
-    border-top-right-radius: inherit;
+    background-color: rgba(0, 0, 0, .1);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.profile {
+    /* max-width: 700px; */
+    justify-content: center;
+}
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+
+.profile__text {
+    flex: 1 1 100px;
+    border-radius: 1em;
+    background-color: rgba(255, 255, 255, .9);
 }
 
 .reading-text {
     padding: 1em;
     border-radius: 1em;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, .9);
 }
 
 .button__secondary {
-    background-color: orange;
+    background-color: rgb(173, 214, 255);
     color: #000;
 }
 
 .social-links-container {
-    display: flex;
+
+}
+
+.social-link-icon {
+    border: none;
+    border-radius: 50%;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
 }
