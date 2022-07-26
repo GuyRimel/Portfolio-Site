@@ -236,7 +236,7 @@ a:active, button:active, .button:active {
 @supports (display: grid) {
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px;
         margin: 0;
         margin-bottom: 20px;
@@ -303,24 +303,22 @@ a:active, button:active, .button:active {
 @keyframes cloud-left-move {
     0% {
         transform: translate(-1200px, 0);
-    }
-    50% {
-        transform: translate(0, 0);
+        transform: scale(2,2);
     }
     100% {
-        transform: translate(1200px, 0);
+        transform: translate(1200px, -600px);
+        transform: scale(5,5);
     }
 }
 
 @keyframes cloud-right-move {
     0% {
         transform: translate(-1200px, 0);
-    }
-    50% {
-        transform: translate(0, 0);
+        transform: scale(2,2);
     }
     100% {
-        transform: translate(1200px, 0);
+        transform: translate(1200px, -600px);
+        transform: scale(5,5);
     }
 }
 
@@ -329,7 +327,7 @@ a:active, button:active, .button:active {
 }
 
 .cloud-right {
-    animation: 15s cloud-left-move infinite alternate linear;
+    animation: 15s cloud-right-move infinite alternate linear;
 }
 
 .about-svg-container {
@@ -344,5 +342,5 @@ a:active, button:active, .button:active {
 }
 
 .about-ground {
-    background-color: rgb(184, 163, 136);
+    background-image: linear-gradient(rgb(184, 163, 136), rgb(94, 69, 37));
 }
