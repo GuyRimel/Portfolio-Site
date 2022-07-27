@@ -1,15 +1,16 @@
 /* COLOR PALETTE 
 
 Text color: #222
-Header: rgb(100, 160, 140)
-Primary: rgb(40, 160, 80)
-Secondary: rgb(152, 255, 186)
+Header: rgb(120, 180, 180)
+Primary button: rgb(40, 160, 80)
+Secondary button: rgb(152, 255, 186)
+highlight color: gold
 
 */
 
 /* GLOBAL */
 * {
-    font-family: "roboto condensed", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-weight: 400;
     color: #222;
     box-sizing: border-box !important;
@@ -54,14 +55,16 @@ a {
     padding-left: 1em;
     padding-right: 1em;
     padding: .5em;
-    color: #000;
+    color: rgb(120, 0, 255);
     text-decoration: none;
     border-radius: 5px;
+    font-weight: 700;
 }
 
 a:visited {
-    color: rgb(160, 0, 160);
+    color: rgb(100, 0, 130);
 }
+
 
 a:hover, a:focus {
     background-color: rgba(0, 0, 0, .25);
@@ -93,6 +96,7 @@ form {
     flex-direction: column;
 }
 
+/* BUTTONS */
 button, .button {
     border: none;
     display: inline-block;
@@ -101,7 +105,7 @@ button, .button {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.3);
     transition: 0.33s;
 }
 
@@ -109,15 +113,27 @@ button:hover, .button:hover, button:focus .button:focus {
     cursor: pointer;
     color: #000;
     background-color: gold;
+    transition: 0s;
+    transform: translateY(-1px);
+}
+
+.button__secondary {
+    background-color: rgb(152, 255, 186);
+    color: #000;
 }
 
 a:active, button:active, .button:active {
+    color: #fff;
     background-color: gold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    transition: 0s;
+    transform: translateY(1px);
+
 }
 
 /* CLASSES */
 .page-header {
-    background-color: rgb(100, 160, 140);
+    background-color: rgb(120, 180, 180);
     display: flex;
     width: 100%;
     padding: 20px;
@@ -140,27 +156,25 @@ a:active, button:active, .button:active {
 }
 
 .navigation-list {
+    position: relative;
     list-style-type: none;
 }
 
 .navigation-list li {
+    position: relative;
     display: inline-block;
     margin: 12px 2px;
 }
 
 .navigation-list__item {
-    background-color: #fff;
-    border: 2px solid rgba(255, 255, 255, .5);
     padding: 10px;
 }
 
 .navigation-list__item--active {
-    background-color: #fff;
-    border: 2px solid gold;
+    background-color: rgba(0, 0, 0, .1);
 }
 
 .profile {
-    /* max-width: 700px; */
     justify-content: center;
 }
 
@@ -183,11 +197,6 @@ a:active, button:active, .button:active {
     padding: 1em;
     border-radius: 1em;
     background-color: rgba(255, 255, 255, .9);
-}
-
-.button__secondary {
-    background-color: rgb(152, 255, 186);
-    color: #000;
 }
 
 .page-footer {
@@ -220,6 +229,9 @@ a:active, button:active, .button:active {
 .max-width500 {
     max-width: 500px;
 }
+
+/* IDs */
+#experience-table
 
 /* GRID STLYING AND RESPONSIVE SIZING*/
 /* start grid fallback */
@@ -255,6 +267,7 @@ a:active, button:active, .button:active {
     }
 }
 
+/* RESPONSIVE MEDIA QUERIES */
 @media all and (max-width: 500px) {
     .grid {
         grid-template-columns: 1fr;
@@ -340,7 +353,7 @@ a:active, button:active, .button:active {
         fill:skyblue
     }
     80% {
-        fill:rgb(214, 68, 0)
+        fill:rgb(214, 139, 0)
     }
     100% {
         fill:darkblue
@@ -364,9 +377,9 @@ a:active, button:active, .button:active {
     flex-direction: column;
     justify-content: center;
     margin: 0;
+    margin-bottom: 1em;
 }
 
 #cotton-field__svg {
     width: 100%;
-    height: 100%;
 }
