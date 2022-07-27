@@ -1,12 +1,18 @@
 /* COLOR PALETTE 
-
 Text color: #222
-Header: rgb(120, 180, 180)
-Primary button: rgb(40, 160, 80)
-Secondary button: rgb(152, 255, 186)
-highlight color: gold
-
 */
+
+:root {
+    --primary-color: #78b4b4;
+    --primary-color-darker: #477f7f;
+    --primary-color-lighter: #bad8d8;
+    --secondary-color: #7800ff;
+    --secondary-color-darker: #480099;
+    --secondary-color-lighter: #ae66ff;
+    --button1: #28a050;
+    --button2: #98ffba;
+    --highlight-color: #ffd700;
+}
 
 /* GLOBAL */
 * {
@@ -55,18 +61,25 @@ a {
     padding-left: 1em;
     padding-right: 1em;
     padding: .5em;
-    color: rgb(120, 0, 255);
+    color: var(--secondary-color);
     text-decoration: none;
     border-radius: 5px;
 }
 
 a:visited {
-    color: rgb(100, 0, 130);
+    color: var(--secondary-color-darker);
 }
-
 
 a:hover, a:focus {
     background-color: rgba(0, 0, 0, .25);
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+li a:hover, li a:focus {
+    background-color: rgba(255, 215, 0, .25);
+    border-bottom: 3px solid rgba(255, 215, 0, .25);
     text-decoration: underline;
     color: #fff;
     cursor: pointer;
@@ -82,6 +95,7 @@ ul {
     margin: 0;
     padding: 0;
 }
+
 li {
     margin: 0;
     padding: 0;
@@ -95,24 +109,33 @@ form {
     flex-direction: column;
 }
 
+td {
+    padding: 10px 20px;
+    background-color: #eee;
+}
+
+thead td {
+    background-color: var(--button2);
+}
+
 /* BUTTONS */
 button, .button {
     border: none;
     display: inline-block;
     font-family: inherit;
-    background-color: rgb(40, 160, 80);
+    background-color: var(--button1);
     color: white;
     padding: 10px;
     border-radius: 5px;
     border-bottom: 4px solid rgba(0, 0, 0, 0.3);
     transition: 0.33s;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px gray;
 }
 
 .button__secondary {
-    background-color: rgb(152, 255, 186);
+    background-color: var(--button2);
     color: #000;
-    text-shadow: 1px 1px white;
+    text-shadow: 1px 1px lightgray;
 }
 
 button:hover, .button:hover, button:focus .button:focus {
@@ -121,12 +144,11 @@ button:hover, .button:hover, button:focus .button:focus {
     text-shadow: none;
     background-color: gold;
     transition: 0s;
-    transform: translateY(-1px);
 }
 
-a:active, button:active, .button:active {
+li a:active, a:active, button:active, .button:active {
     color: #fff;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px gray;
     background-color: gold;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     transition: 0s;
@@ -136,7 +158,7 @@ a:active, button:active, .button:active {
 
 /* CLASSES */
 .page-header {
-    background-color: rgb(120, 180, 180);
+    background-image: linear-gradient(var(--primary-color) 50%, var(--primary-color-darker));
     display: flex;
     width: 100%;
     padding: 20px;
@@ -170,11 +192,13 @@ a:active, button:active, .button:active {
 }
 
 .navigation-list__item {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.33));
     padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navigation-list__item--active {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .profile {
@@ -199,7 +223,7 @@ a:active, button:active, .button:active {
 .reading-text {
     padding: 1em;
     border-radius: 1em;
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, .8);
 }
 
 .page-footer {
@@ -229,12 +253,29 @@ a:active, button:active, .button:active {
     text-align: center;
 }
 
-.max-width500 {
-    max-width: 500px;
+/* IDs */
+#experience-table {
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+    margin: 20px auto;
 }
 
-/* IDs */
-#experience-table
+#about__ground {
+    background-color: #ab7c30;
+    padding-bottom: 20px;
+}
+
+#cotton-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+#cotton-field__svg {
+    width: 100%;
+}
 
 /* GRID STLYING AND RESPONSIVE SIZING*/
 /* start grid fallback */
@@ -318,24 +359,30 @@ a:active, button:active, .button:active {
 @keyframes cloud-left-move {
     0% {
         transform: translate(-1520px, 0px);
+        opacity: .5;
     }
     50% {
         transform: translate(0px, 0px);
+        opacity: .75;
     }
     100% {
         transform: translate(1520px, 0px);
+        opacity: 1;
     }
 }
 
 @keyframes cloud-right-move {
     0% {
         transform: translate(-1920px, 0px);
+        opacity: .66;
     }
     50% {
         transform: translate(0px, 0px);
+        opacity: 1;
     }
     100% {
         transform: translate(1920px, 0px);
+        opacity: .33;
     }
 }
 
@@ -363,6 +410,30 @@ a:active, button:active, .button:active {
     }
 }
 
+@keyframes night-day-cycle2 {
+    0% {
+        background-color: darkblue
+    }
+    20% {
+        background-color: rgb(255, 200, 0)
+    }
+    30% {
+        background-color:skyblue
+    }
+    50% {
+        background-color:rgb(34, 192, 255)
+    }
+    70% {
+        background-color:skyblue
+    }
+    80% {
+        background-color:rgb(214, 139, 0)
+    }
+    100% {
+        background-color:darkblue
+    }
+}
+
 #cloud1, #cloud3 {
     animation: 15s cloud-left-move infinite alternate linear;
 }
@@ -375,14 +446,31 @@ a:active, button:active, .button:active {
     animation: 30s night-day-cycle infinite normal linear;
 }
 
-#cotton-field {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-    margin-bottom: 1em;
+.main__about {
+    padding: 0;
+    padding-top: 20px;
+    animation: 30s night-day-cycle2 infinite normal linear;
 }
 
-#cotton-field__svg {
-    width: 100%;
+@keyframes cotton-fade {
+    0% {
+        opacity: 0;
+        transform: scaleY(100%);
+    }
+    50% {
+        opacity: .5;
+        transform: scaleY(100%);
+    }
+    90% {
+        opacity: 1;
+        transform: scaleY(100%);
+    }
+    100% {
+        opacity: .5;
+        transform: scaleY(200%);
+    }
+}
+
+#cotton-group {
+    animation: 15s cotton-fade infinite normal linear;
 }
