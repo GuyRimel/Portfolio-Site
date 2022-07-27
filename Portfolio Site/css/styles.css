@@ -107,23 +107,27 @@ button, .button {
     border-radius: 5px;
     border-bottom: 4px solid rgba(0, 0, 0, 0.3);
     transition: 0.33s;
-}
-
-button:hover, .button:hover, button:focus .button:focus {
-    cursor: pointer;
-    color: #000;
-    background-color: gold;
-    transition: 0s;
-    transform: translateY(-1px);
+    text-shadow: 1px 1px black;
 }
 
 .button__secondary {
     background-color: rgb(152, 255, 186);
     color: #000;
+    text-shadow: 1px 1px white;
+}
+
+button:hover, .button:hover, button:focus .button:focus {
+    cursor: pointer;
+    color: #000;
+    text-shadow: none;
+    background-color: gold;
+    transition: 0s;
+    transform: translateY(-1px);
 }
 
 a:active, button:active, .button:active {
     color: #fff;
+    text-shadow: 1px 1px black;
     background-color: gold;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     transition: 0s;
