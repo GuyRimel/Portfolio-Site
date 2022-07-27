@@ -60,7 +60,7 @@ a {
 }
 
 a:visited {
-    color: rgb(167, 53, 167);
+    color: rgb(160, 0, 160);
 }
 
 a:hover, a:focus {
@@ -285,62 +285,92 @@ a:active, button:active, .button:active {
 }
 
 /* ANIMATIONS */
-@keyframes color-change {
-    0% { fill: #edc655;
+@keyframes sun-cycle {
+    0% {
+        fill: #f76414;
+        transform: translateY(550px);
     }
     50% {
         fill: #fcffad;
     }
-    100% {
-        fill: #f76414;
+    100% { 
+        fill: #edc655;
+        transform: translateY(-550px);
     }
 }
 
-.sun {
-    animation: 4s color-change infinite alternate linear;
+#sun {
+    animation: 30s sun-cycle infinite normal linear;
 }
 
 @keyframes cloud-left-move {
     0% {
-        transform: translate(-1200px, 0);
-        transform: scale(2,2);
+        transform: translate(-1520px, 0px);
+    }
+    50% {
+        transform: translate(0px, 0px);
     }
     100% {
-        transform: translate(1200px, -600px);
-        transform: scale(5,5);
+        transform: translate(1520px, 0px);
     }
 }
 
 @keyframes cloud-right-move {
     0% {
-        transform: translate(-1200px, 0);
-        transform: scale(2,2);
+        transform: translate(-1920px, 0px);
+    }
+    50% {
+        transform: translate(0px, 0px);
     }
     100% {
-        transform: translate(1200px, -600px);
-        transform: scale(5,5);
+        transform: translate(1920px, 0px);
     }
 }
 
-.cloud-left {
+@keyframes night-day-cycle {
+    0% {
+        fill: darkblue
+    }
+    20% {
+        fill: rgb(255, 200, 0)
+    }
+    30% {
+        fill:skyblue
+    }
+    50% {
+        fill:rgb(34, 192, 255)
+    }
+    70% {
+        fill:skyblue
+    }
+    80% {
+        fill:rgb(214, 68, 0)
+    }
+    100% {
+        fill:darkblue
+    }
+}
+
+#cloud1, #cloud3 {
     animation: 15s cloud-left-move infinite alternate linear;
 }
 
-.cloud-right {
+#cloud2, #cloud4 {
     animation: 15s cloud-right-move infinite alternate linear;
 }
 
-.about-svg-container {
+#sky {
+    animation: 30s night-day-cycle infinite normal linear;
+}
+
+#cotton-field {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0;
 }
 
-.about-svg {
+#cotton-field__svg {
     width: 100%;
-}
-
-.about-ground {
-    background-image: linear-gradient(rgb(184, 163, 136), rgb(94, 69, 37));
+    height: 100%;
 }
