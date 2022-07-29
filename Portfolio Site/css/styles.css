@@ -1,7 +1,6 @@
 /* ROOT AND COLOR PALETTE */
 
 :root {
-    
     --primary-color: #78b4b4;
     --primary-color-darker: #477f7f;
     --primary-color-lighter: #bad8d8;
@@ -24,9 +23,6 @@
     --highlight-color-alpha90: rgb(255, 215, 0, 0.9);
     --highlight-color-alpha100: rgb(255, 215, 0, 1.0);
     
-    --black: #000;
-    --black-222: #222;
-
     --black-alpha0: rgba(0, 0, 0, 0);
     --black-alpha10: rgba(0, 0, 0, 0.1);
     --black-alpha20: rgba(0, 0, 0, 0.2);
@@ -38,10 +34,26 @@
     --black-alpha80: rgba(0, 0, 0, 0.8);
     --black-alpha90: rgba(0, 0, 0, 0.9);
     --black-alpha100: rgba(0, 0, 0, 1.0);
+    
+    --black: #000;
 
+    --gray-111: #111;
+    --gray-222: #222;
+    --gray-333: #333;
+    --gray-444: #444;
+    --gray-555: #555;
+    --gray-666: #666;
+    --gray-777: #777;
+    --gray-888: #888;
+    --gray-999: #999;
+    --gray-aaa: #aaa;
+    --gray-bbb: #bbb;
+    --gray-ccc: #ccc;
+    --gray-ddd: #ddd;
+    --gray-eee: #eee;
+    
     --white: #fff;
-    --white-ddd: #ddd;
-
+    
     --white-alpha0: rgba(255, 255, 255, 0);
     --white-alpha10: rgba(255, 255, 255, 0.1);
     --white-alpha20: rgba(255, 255, 255, 0.2);
@@ -53,6 +65,19 @@
     --white-alpha80: rgba(255, 255, 255, 0.8);
     --white-alpha90: rgba(255, 255, 255, 0.9);
     --white-alpha100: rgba(255, 255, 255, 1.0);
+
+    /* ANIMATION COLORS */
+    --color-dirt: #ab7c30;
+
+    --color-sun1: #f76414;
+    --color-sun2: #fcffad;
+    --color-sun3: #edc655;
+
+    --color-sky1: #00008b;
+    --color-sky2: #ffc800;
+    --color-sky3: #87ceeb;
+    --color-sky4: #22c0ff;
+    --color-sky5: #d68b00;
 }
 
 /* GLOBAL */
@@ -61,7 +86,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--black-222);
+    color: var(--gray-222);
     box-sizing: border-box !important;
     margin: 0px;
 }
@@ -134,7 +159,7 @@ form {
 }
 
 td {
-    background-color: var(--white-ddd);
+    background-color: var(--gray-eee);
     padding: 10px 20px;
 }
 
@@ -157,8 +182,8 @@ button, .button {
 
 .button__secondary {
     background-color: var(--button2);
-    color: var(--black-222);
-    text-shadow: 1px 1px var(--white-ddd);
+    color: var(--gray-222);
+    text-shadow: 1px 1px var(--gray-ddd);
 }
 
 button:hover, .button:hover, button:focus .button:focus {
@@ -171,7 +196,7 @@ button:hover, .button:hover, button:focus .button:focus {
 
 li a:active, a:active, button:active, .button:active {
     background-color: var(--white);
-    color: var(--white-ddd);
+    color: var(--gray-ddd);
     text-shadow: 1px 1px var(--black-alpha60);
     border-bottom: 1px solid var(--black-alpha30);
     transform: translateY(1px);
@@ -245,7 +270,7 @@ li a:active, a:active, button:active, .button:active {
 }
 
 .page-footer {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: var(--black-alpha20);
     clear: both;
     display: flex;
     flex-direction: column;
@@ -284,11 +309,12 @@ li a:active, a:active, button:active, .button:active {
 }
 
 #about__ground {
-    background-color: #ab7c30;
+    background-image: repeating-linear-gradient(var(--black-alpha50) 3px, var(--color-dirt), var(--color-dirt), var(--gray-444) 65px);
     padding-bottom: 20px;
 }
 
 #experience-table {
+    background-color:  var(--black);
     width: fit-content;
     margin: auto;
     justify-content: center;
@@ -313,7 +339,7 @@ li a:active, a:active, button:active, .button:active {
     }
     
     .grid__item {
-        background-color: #ddd;
+        background-color: var(--gray-ccc);
         width: auto;
         min-height: auto;
         padding: 20px;
@@ -321,7 +347,6 @@ li a:active, a:active, button:active, .button:active {
     }
     
     .grid__item:first-child {
-        background-color: #ccc;
         /* starts in column#3 / ends at the start of cell#3 */
         grid-column: 1 / 1;
         /* starts in row#1 / ends at at start of cell#3 */
@@ -358,14 +383,14 @@ li a:active, a:active, button:active, .button:active {
 /* ANIMATIONS */
 @keyframes sun-cycle {
     0% {
-        fill: #f76414;
+        fill: var(--color-sun1);
         transform: translateY(550px);
     }
     50% {
-        fill: #fcffad;
+        fill: var(--color-sun2);
     }
     100% { 
-        fill: #edc655;
+        fill: var(--color-sun3);
         transform: translateY(-550px);
     }
 }
@@ -414,49 +439,49 @@ li a:active, a:active, button:active, .button:active {
 
 @keyframes night-day-cycle {
     0% {
-        fill: darkblue
+        fill: var(--color-sky1)
     }
     20% {
-        fill: rgb(255, 200, 0)
+        fill: var(--color-sky2)
     }
     30% {
-        fill:skyblue
+        fill: var(--color-sky3)
     }
     50% {
-        fill:rgb(34, 192, 255)
+        fill: var(--color-sky4)
     }
     70% {
-        fill:skyblue
+        fill: var(--color-sky3)
     }
     80% {
-        fill:rgb(214, 139, 0)
+        fill: var(--color-sky5)
     }
     100% {
-        fill:darkblue
+        fill: var(--color-sky1)
     }
 }
 
 @keyframes night-day-cycle2 {
     0% {
-        background-color: darkblue
+        background-color: var(--color-sky1)
     }
     20% {
-        background-color: rgb(255, 200, 0)
+        background-color: var(--color-sky2)
     }
     30% {
-        background-color:skyblue
+        background-color:var(--color-sky3)
     }
     50% {
-        background-color:rgb(34, 192, 255)
+        background-color:var(--color-sky4)
     }
     70% {
-        background-color:skyblue
+        background-color:var(--color-sky3)
     }
     80% {
-        background-color:rgb(214, 139, 0)
+        background-color:var(--color-sky5)
     }
     100% {
-        background-color:darkblue
+        background-color:var(--color-sky1)
     }
 }
 
@@ -464,7 +489,7 @@ li a:active, a:active, button:active, .button:active {
     animation: 30s night-day-cycle infinite normal linear;
 }
 
-.main__about {
+#main__about {
     padding: 0;
     padding-top: 20px;
     animation: 30s night-day-cycle2 infinite normal linear;
