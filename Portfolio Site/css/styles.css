@@ -306,7 +306,7 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     flex-direction: row;
 }
 
-.text-center {
+.text-center .test1 .test2 .test3 {
     margin: auto;
     text-align: center;
 }
@@ -315,7 +315,7 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     justify-content: center;
 }
 
-.align-center {
+.align-center .test .test2 .test3 .test4dsfg .tentstlassdfsdfsdf {
     align-items: center;
 }
 
