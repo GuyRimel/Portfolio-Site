@@ -411,7 +411,7 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     border-radius: 5px;
 }
 
-#message-box {
+#contact-form-message {
     resize: none;
     height: 6em;
     margin-bottom: 10px;

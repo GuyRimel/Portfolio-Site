@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
 
     <body>
 
-        <!-- HEADER -- Logo and Navigation -->
+        <!-- Logo and Navigation -->
         <header class="page-header">
             <img class="topLogo page-header__item" src="img/RLogo.svg" alt="Logo for Guy Rimel">
             <nav class="page-header__item">
@@ -22,13 +22,13 @@
                         <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
                     </li>
                     <li role="presentation">
-                        <a href="Work of Guy Rimel.html" role="menuitem" class="navigation-list__item">Work</a>
+                        <a href="Work_of_Guy_Rimel.html" role="menuitem" class="navigation-list__item">Work</a>
                     </li>
                     <li role="presentation">
-                        <a href="About Guy Rimel.html" role="menuitem" class="navigation-list__item">About</a>
+                        <a href="About_Guy_Rimel.html" role="menuitem" class="navigation-list__item">About</a>
                     </li>
                     <li role="presentation">
-                        <a href="Contact Guy Rimel.html" role="menuitem" class="navigation-list__item">Contact</a>
+                        <a href="Contact_Guy_Rimel.html" role="menuitem" class="navigation-list__item">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -36,7 +36,7 @@
 
         <!-- Main Content -->
         <main id="contact__main">
-            <img id="contact__portrait" src="img\Guyatdesk.jpg" alt="Contact Picture of Guy Rimel">
+            <img id="contact__portrait" src="img/Guyatdesk.jpg" alt="Contact Picture of Guy Rimel">
             <h1>Contact Info</h1>
             <div>
                 Guy Rimel<br>
@@ -49,18 +49,20 @@
                 <span>Email: <a href="mailto:135guyrimel@gmail.com" target="_blank">135guyrimel@gmail.com</a></span><br>
                 <span>Skype: <a href="skype:hello.careerfoundry" target="_blank">Let's video chat!</a></span>
                 <br>
+                <br>
             </div>
+
             <!-- contact form -->
             <h3>Reach out!</h3>
-            <form action="" method="post" id="contact-form">
+            <form action="#" method="post" id="contact-form">
                 <label for="contact-email" class="standard-label">E-mail: </label>
                 <input type="email" id="contact-email" required>
                 
-                <label for="tel" class="standard-label">Telephone: *###-###-####</label>
-                <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                <label for="contact-form-tel" class="standard-label">Telephone: *###-###-####</label>
+                <input id="contact-form-tel" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
                 
-                <label for="message" class="standard-label">Message: </label>
-                <textarea id="message-box" name="message" maxlength="240" required></textarea>
+                <label for="contact-form-message" class="standard-label">Message: </label>
+                <textarea id="contact-form-message" name="message" maxlength="240" required></textarea>
                 
                 <input class="button button__secondary" type="submit" value="Send message">
             </form>
