@@ -150,7 +150,7 @@ form {
 }
 
 td {
-    background-color: var(--gray-eee);
+    background-color: var(--white);
     padding: 10px 20px;
 }
 
@@ -268,7 +268,7 @@ li a:active, a:active, button:active, .button:active {
 }
 
 .page-footer {
-    background-color: var(--black-alpha20);
+    background-color: var(--gray-ddd);
     clear: both;
     display: flex;
     flex-direction: column;
@@ -310,7 +310,16 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     justify-content: center;
 }
 
+.align-center {
+    align-items: center;
+}
+
 /* IDs */
+#profile__main {
+    margin: 80px 0;
+    align-items: center;
+}
+
 #profile__portrait {
     resize: none;
     float: left;
@@ -318,6 +327,12 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     height: 250px;
     margin-right: 25px;
     border-radius: 50%;
+}
+
+#contact__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #contact__portrait {
@@ -394,18 +409,11 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     .grid {
         grid-template-columns: 1fr;
     }
-    #contact__main{
-        flex-direction: column;
-    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
     .grid {
         grid-template-columns: 1fr 1fr;
-    }
-
-    #contact__main{
-        flex-direction: column;
     }
     
     .reading-text {
@@ -416,10 +424,6 @@ a.social-link-icon:hover, a.social-link-icon:focus {
 @media all and (min-width: 750px) and (max-width: 1024px) {
     .grid {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    
-    #contact__main{
-        flex-direction: column;
     }
 
     .reading-text {
@@ -549,7 +553,7 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     animation: 30s night-day-cycle infinite normal linear;
 }
 
-#main__about {
+#about__main {
     padding: 0;
     padding-top: 20px;
     animation: 30s night-day-cycle2 infinite normal linear;

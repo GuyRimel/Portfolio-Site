@@ -8,27 +8,22 @@
 /* ROOT AND COLOR PALETTE */
 
 :root {
-    --primary-color: #78b4b4;
-    --primary-color-darker: #477f7f;
-    --primary-color-lighter: #bad8d8;
+    --primary-color-darkest: #006144;
+    --primary-color-darker: #007a5d;
+    --primary-color: #00ad90;
+    --primary-color-lighter: #33e0c3;
+    --primary-color-lightest: #66fff6;
 
-    --secondary-color: #7800ff;
-    --secondary-color-darker: #480099;
-    --secondary-color-lighter: #ae66ff;
+    --secondary-color-darker: rgb(51, 0, 122);
+    --secondary-color: #6600ad;
+    --secondary-color-lighter: #9933E0;
 
-    --button1: #28a050;
-    --button2: #98ffba;    
-
-    --highlight-color-alpha10: rgb(255, 215, 0, 0.1);
-    --highlight-color-alpha20: rgb(255, 215, 0, 0.2);
-    --highlight-color-alpha30: rgb(255, 215, 0, 0.3);
-    --highlight-color-alpha40: rgb(255, 215, 0, 0.4);
-    --highlight-color-alpha50: rgb(255, 215, 0, 0.5);
-    --highlight-color-alpha60: rgb(255, 215, 0, 0.6);
-    --highlight-color-alpha70: rgb(255, 215, 0, 0.7);
-    --highlight-color-alpha80: rgb(255, 215, 0, 0.8);
-    --highlight-color-alpha90: rgb(255, 215, 0, 0.9);
-    --highlight-color-alpha100: rgb(255, 215, 0, 1.0);
+    --highlight-color-alpha50: rgba(167, 224, 51, 0.5);
+    --highlight-color-alpha60: rgba(167, 224, 51, 0.6);
+    --highlight-color-alpha70: rgba(167, 224, 51, 0.7);
+    --highlight-color-alpha80: rgba(167, 224, 51, 0.8);
+    --highlight-color-alpha90: rgba(167, 224, 51, 0.9);
+    --highlight-color-alpha100: rgba(167, 224, 51, 1.0);
     
     --black-alpha0: rgba(0, 0, 0, 0);
     --black-alpha10: rgba(0, 0, 0, 0.1);
@@ -74,7 +69,8 @@
     --white-alpha100: rgba(255, 255, 255, 1.0);
 
     /* ANIMATION COLORS */
-    --color-dirt: #ab7c30;
+    --color-dirt: rgb(127, 89, 71);
+    --color-dirt-alpha75: rgba(127, 89, 71, .75);
 
     --color-sun1: #f76414;
     --color-sun2: #fcffad;
@@ -89,7 +85,7 @@
 
 /* GLOBAL */
 * {
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, "Inconsolata", "Roboto Condensed", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -120,11 +116,6 @@ h3 {
 
 p {
     margin: .75em;
-}
-
-img {
-    border: 2px solid var(--black-alpha20);
-    border-radius: 20px;
 }
 
 a {
@@ -177,23 +168,22 @@ form {
 }
 
 td {
-    background-color: var(--gray-eee);
+    background-color: var(--white);
     padding: 10px 20px;
 }
 
 thead td {
-    background-color: var(--button2);
+    background-color: var(--primary-color-lighter);
 }
 
 /* BUTTONS */
 button, .button {
-    background-color: var(--button1);
+    background-color: var(--primary-color-darker);
     color: var(--white);
     border: none;
     display: inline-block;
     padding: 10px;
     border-radius: 5px;
-    text-shadow: 1px 1px var(--black-alpha50);
     border-bottom: 4px solid var(--black-alpha30);
     -webkit-transition: 0.33s;
     -o-transition: 0.33s;
@@ -201,9 +191,8 @@ button, .button {
 }
 
 .button__secondary {
-    background-color: var(--button2);
+    background-color: var(--primary-color-lighter);
     color: var(--gray-222);
-    text-shadow: 1px 1px var(--gray-ddd);
 }
 
 button:hover, .button:hover, button:focus .button:focus {
@@ -282,24 +271,33 @@ li a:active, a:active, button:active, .button:active {
     background-color: var(--white-alpha20);
 }
 
-.profile {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-
-.profile__portrait {
-    float: left;
-    width: 250px;
-    height: 250px;
-    margin-right: 25px;
-    border-radius: 50%;
-}
-
 .profile__text, .reading-text {
+    background-color: var(--gray-eee);
+    padding: 20px;
+    border-radius: 5px;
+    height: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 20px 10px;
+}
+
+.code-text {
+    font-family: "Inconsolata";
+    font-weight: 700;
+    color: var(--primary-color-lightest);
+    background-color: var(--black);
+    padding: .25em;
+}
+
+.about__text {
     background-color: var(--white-alpha90);
-    padding: 10px;
-    border-radius: 20px;
+    border-bottom: 3px solid var(--gray-777);
+}
+
+.about__text * {
+    margin: 0;
+    padding: 0;
 }
 
 .profile__text {
@@ -310,7 +308,7 @@ li a:active, a:active, button:active, .button:active {
 }
 
 .page-footer {
-    background-color: var(--black-alpha20);
+    background-color: var(--gray-ddd);
     clear: both;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -326,6 +324,20 @@ li a:active, a:active, button:active, .button:active {
 .social-link-icon {
     border: none;
     border-radius: 50%;
+}
+
+img.social-link-icon {
+    background-color: var(--white);
+}
+
+a.social-link-icon:hover, a.social-link-icon:focus {
+    background-color: var(--black-alpha0);
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .flex-column {
@@ -347,7 +359,59 @@ li a:active, a:active, button:active, .button:active {
     text-align: center;
 }
 
+.justify-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.align-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
 /* IDs */
+#profile__main {
+    margin: 80px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#profile__portrait {
+    resize: none;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-right: 25px;
+    border-radius: 50%;
+}
+
+#contact__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#contact__portrait {
+    width: 400px;
+    border-radius: 5px;
+}
+
+#message-box {
+    resize: none;
+    height: 6em;
+    margin-bottom: 10px;
+}
+
 #cotton-field {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -367,8 +431,8 @@ li a:active, a:active, button:active, .button:active {
 }
 
 #about__ground {
-    background-image: -o-repeating-linear-gradient(var(--black-alpha50) 3px, var(--color-dirt), var(--color-dirt), var(--gray-444) 65px);
-    background-image: repeating-linear-gradient(var(--black-alpha50) 3px, var(--color-dirt), var(--color-dirt), var(--gray-444) 65px);
+    background-image: -o-linear-gradient(var(--color-dirt-alpha75) 3px, var(--color-dirt) 95%, var(--white-alpha30));
+    background-image: linear-gradient(var(--color-dirt-alpha75) 3px, var(--color-dirt) 95%, var(--white-alpha30));
     padding-bottom: 20px;
 }
 
@@ -404,7 +468,7 @@ li a:active, a:active, button:active, .button:active {
     }
     
     .grid__item {
-        background-color: var(--gray-ccc);
+        background-color: var(--gray-ddd);
         width: auto;
         min-height: auto;
         padding: 20px;
@@ -412,6 +476,7 @@ li a:active, a:active, button:active, .button:active {
     }
     
     .grid__item:first-child {
+        background-color: var(--gray-bbb);
         /* starts in column#3 / ends at the start of cell#3 */
         -ms-grid-column: 1;
         grid-column: 1 / 1;
@@ -435,9 +500,28 @@ li a:active, a:active, button:active, .button:active {
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
+    
+    .reading-text {
+        -ms-flex-item-align: initial;
+            -ms-grid-row-align: initial;
+            align-self: initial;
+    }
 }
 
-@media all and (max-width: 750px) {
+@media all and (min-width: 750px) and (max-width: 1024px) {
+    .grid {
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .reading-text {
+        -ms-flex-item-align: initial;
+            -ms-grid-row-align: initial;
+            align-self: initial;
+    }
+}
+
+@media all and (max-width: 1024px) {
     .grid {
         gap: 10px;
     }
@@ -670,7 +754,7 @@ li a:active, a:active, button:active, .button:active {
             animation: 30s night-day-cycle infinite normal linear;
 }
 
-#main__about {
+#about__main {
     padding: 0;
     padding-top: 20px;
     -webkit-animation: 30s night-day-cycle2 infinite normal linear;
