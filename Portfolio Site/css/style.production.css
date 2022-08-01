@@ -99,7 +99,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    font-variant: small-caps;
+    /* font-variant: small-caps; */
 }
 
 h1 {
@@ -168,7 +168,7 @@ form {
 }
 
 td {
-    background-color: var(--white);
+    background-color: var(--gray-eee);
     padding: 10px 20px;
 }
 
@@ -291,8 +291,13 @@ li a:active, a:active, button:active, .button:active {
 }
 
 .about__text {
-    background-color: var(--white-alpha90);
+    background-color: var(--gray-eee);
     border-bottom: 3px solid var(--gray-777);
+    padding: 20px 10%;
+}
+
+.about__text h1, .about__text h2 {
+    color: var(--primary-color-darker);
 }
 
 .about__text * {
@@ -431,8 +436,8 @@ a.social-link-icon:hover, a.social-link-icon:focus {
 }
 
 #about__ground {
-    background-image: -o-linear-gradient(var(--color-dirt-alpha75) 3px, var(--color-dirt) 95%, var(--white-alpha30));
-    background-image: linear-gradient(var(--color-dirt-alpha75) 3px, var(--color-dirt) 95%, var(--white-alpha30));
+    background-image: -o-linear-gradient(var(--white-alpha50) 3px, var(--gray-333) 95%, var(--white-alpha30));
+    background-image: linear-gradient(var(--white-alpha50) 3px, var(--gray-333) 95%, var(--white-alpha30));
     padding-bottom: 20px;
 }
 
