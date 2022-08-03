@@ -40,7 +40,7 @@
       <feGaussianBlur stdDeviation="4 0" edgeMode="none"/>
     </filter>
   </defs>
-  <path style="fill-rule: nonzero; stroke-width: 2px; stroke: rgb(0, 0, 0); filter: url(#drop-shadow-filter-0) url(#outline-filter-1); fill: rgb(40, 160, 80);" d="M 20 57.573 L 53.259 250.991 L 215.244 27 L 20 57.573 Z" bx:origin="0.537516 0.506203"/>
+  <path style="fill-rule: nonzero; stroke-width: 2px; stroke: rgb(0, 0, 0); filter: url(#drop-shadow-filter-0) url(#outline-filter-1); fill: #198;" d="M 20 57.573 L 53.259 250.991 L 215.244 27 L 20 57.573 Z" bx:origin="0.537516 0.506203"/>
   <path style="fill-rule: nonzero; stroke-width: 2px; stroke: rgb(0, 0, 0); filter: url(#drop-shadow-filter-0) url(#outline-filter-1); fill: url(#gradient-2);" d="M 48.521 77.722 L 72.702 202.243 L 109.225 151.741 L 225.875 207.449 L 135.176 116.15 L 179.326 54.803 L 48.521 77.722 Z" bx:origin="0.09492 0.560649"/>
   <path style="stroke: rgb(0, 0, 0); fill: rgb(255, 255, 255); stroke-width: 0px; fill-opacity: 0.33; filter: url(#motion-blur-filter-0);" d="M 64.945 211.636 H 226.699 A 12 12 0 0 1 238.699 223.636 V 246.622 H 64.945 A 12 12 0 0 1 52.945 234.622 V 223.636 A 12 12 0 0 1 64.945 211.636 Z" bx:shape="rect 52.945 211.636 185.754 34.986 12 12 0 12 1@8082f2b4" bx:origin="0.160308 -2.036589"/>
   <text style="fill: rgb(255, 255, 255); font-family: Consolas; font-size: 8.25px; white-space: pre; filter: url(#outline-filter-2);" transform="matrix(4.180334, 0, 0, 3.473254, -868.195557, -427.33078)" x="222.256" y="191.698" bx:origin="0.12783 -2.13595">Guy Rimel</text>
