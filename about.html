@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>About Guy Rimel - Portfolio</title>
-        <link rel="shortcut icon" href="img/icon/neutralEmoji.ico" type="image/x-icon">
-        <!-- Style Links -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Inconsolata:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guy Rimel - Portfolio</title>
+    <link rel="shortcut icon" href="img/icon/neutralEmoji.ico" type="image/x-icon">
+    <!-- Style Links -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Inconsolata:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
 
-    <body>
+    <body class="night-day">
 
         <!-- Logo and Navigation -->
         <header class="page-header">
-            <img class="topLogo page-header__item" src="img/RLogo.svg" alt="Logo for Guy Rimel">
-            <nav class="page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="Work_of_Guy_Rimel.html" role="menuitem" class="navigation-list__item">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="About_Guy_Rimel.html" role="menuitem" class="navigation-list__item">About</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="Contact_Guy_Rimel.html" role="menuitem" class="navigation-list__item">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+          <img class="topLogo page-header__item" src="img/RLogo.svg" alt="Logo for Guy Rimel">
+          <nav class="page-header__item">
+              <ul role="menubar" class="navigation-list">
+                  <li role="presentation">
+                      <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+                  </li>
+                  <li role="presentation">
+                      <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                  </li>
+                  <li role="presentation">
+                      <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                  </li>
+                  <li role="presentation">
+                      <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                  </li>
+              </ul>
+          </nav>
+      </header>
 
         <!-- Main Content -->
         <main id="about__main" class="flex-column">
@@ -149,7 +150,7 @@
                       </filter>
                     </defs>
                     <rect width="1920" height="550" style="fill: rgb(148, 226, 255);" id="sky" y="2.54" bx:origin="0.125 -0.818182"/>
-                    <path d="M 996.321 114.128 C 996.321 138.429 976.622 158.128 952.321 158.128 C 928.02 158.128 908.321 138.429 908.321 114.128 C 908.321 89.827 928.02 70.128 952.321 70.128 C 976.622 70.128 996.321 89.827 996.321 114.128 Z" style="stroke: rgb(255, 255, 255); paint-order: fill; fill: rgb(255, 255, 136);" id="sun">
+                    <path d="M 996.321 114.128 C 996.321 138.429 976.622 158.128 952.321 158.128 C 928.02 158.128 908.321 138.429 908.321 114.128 C 908.321 89.827 928.02 70.128 952.321 70.128 C 976.622 70.128 996.321 89.827 996.321 114.128 Z" style="display:none; stroke: rgb(255, 255, 255); paint-order: fill; fill: rgb(255, 255, 136);" id="sun">
                       <title>sun</title>
                     </path>
                     <path d="M 163.535 99.809 C 167.508 99.152 177.153 100.526 182.382 102.951 C 187.202 105.184 191.858 109.439 194.16 113.156 C 196.127 116.33 193.89 121.646 196.516 123.367 C 199.845 125.542 211.392 120.947 215.361 121.794 C 217.814 122.319 217.725 124.793 220.074 124.936 C 223.835 125.165 232.318 118.908 237.35 118.653 C 241.511 118.445 245.23 122.771 248.343 121.794 C 251.545 120.792 252.97 114.19 256.197 112.372 C 259.297 110.625 263.332 109.825 267.189 110.802 C 271.878 111.988 278.906 115.636 282.111 121.009 C 284.015 124.206 284.393 130.761 284.597 136.674 C 289.048 134.308 297.773 131.552 303.658 131.38 C 309.654 131.206 317.714 132.416 320.857 135.534 C 321.184 135.856 321.477 136.233 321.735 136.646 C 324.859 136.733 327.713 137.002 330.01 137.501 C 338.235 139.276 345.472 144.187 349.643 149.28 C 353.377 153.84 350.8 161.497 355.14 165.772 C 360.488 171.034 376.217 169.648 382.623 175.979 C 389.119 182.393 394.251 197.894 393.618 204.247 C 393.193 208.507 390.38 211.066 386.549 212.885 C 381.382 215.34 377.955 214.187 362.991 214.456 C 323.507 215.17 128.662 210.269 96.004 211.316 C 85.897 211.64 86.537 213.385 81.869 212.885 C 77.113 212.378 72.91 208.548 67.736 208.174 C 62.017 207.76 54.396 212.418 48.887 211.316 C 43.77 210.291 37.852 205.878 35.54 202.677 C 33.78 200.244 33.282 197.396 33.965 194.825 C 34.749 191.887 38.965 188.032 41.035 186.187 C 42.484 184.894 44.252 185.575 44.962 183.831 C 46.174 180.858 41.916 171.683 43.391 166.554 C 44.847 161.49 48.589 155.794 53.599 153.203 C 59.339 150.239 71.954 153.798 77.157 151.636 C 80.847 150.103 81.644 147.347 84.224 144.567 C 87.307 141.246 89.726 136.705 94.432 132.789 C 100.43 127.8 113.125 122.934 118.776 117.869 C 123.097 113.994 122.839 108.829 127.415 106.09 C 133.136 102.664 147.176 101.377 152.542 101.377 C 155.639 101.377 156.953 103.262 158.825 102.951 C 160.596 102.652 161.092 100.211 163.535 99.809 Z" style="fill-rule: nonzero; fill: rgb(249, 249, 249); stroke-width: 2px; stroke: rgb(255, 255, 255); filter: url(#filter-5);" id="cloud1">
@@ -1690,11 +1691,10 @@
                         </tr>
                     </tbody>
                 </table>
-                
-                <div class="text-center">
-                    <a href="files/cv.pdf" class="button" download>Download my CV</a>
+                <div class="text-center justify-center">
+                  <a href="files/cv.pdf" class="button" download>Download my CV</a>
                 </div>
-            </div>
+          </div>
         </main>
         
         <!-- Footer -->

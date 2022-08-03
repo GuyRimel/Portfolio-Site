@@ -97,6 +97,12 @@
 
 /* ELEMENTS */
 
+body {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--primary-color)), to(var(--primary-color-darker)));
+    background-image: -o-linear-gradient(var(--primary-color) 50%, var(--primary-color-darker));
+    background-image: linear-gradient(var(--primary-color) 50%, var(--primary-color-darker));
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     /* font-variant: small-caps; */
@@ -221,9 +227,6 @@ li a:active, a:active, button:active, .button:active {
 
 /* CLASSES */
 .page-header {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, var(--primary-color)), to(var(--primary-color-darker)));
-    background-image: -o-linear-gradient(var(--primary-color) 50%, var(--primary-color-darker));
-    background-image: linear-gradient(var(--primary-color) 50%, var(--primary-color-darker));
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -315,6 +318,8 @@ li a:active, a:active, button:active, .button:active {
 .page-footer {
     background-color: var(--gray-ddd);
     clear: both;
+    position: static;
+    bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -378,7 +383,7 @@ a.social-link-icon:hover, a.social-link-icon:focus {
 
 /* IDs */
 #profile__main {
-    margin: 80px 0;
+    margin: 20px 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
