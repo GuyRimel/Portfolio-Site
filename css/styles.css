@@ -249,7 +249,7 @@ li a:active, a:active, button:active, .button:active {
 .code-text {
     font-family: "Inconsolata";
     font-weight: 700;
-    color: var(--primary-color-lightest);
+    color: var(--primary-color-lighter);
     background-color: var(--black);
     padding: .25em;
 }
@@ -328,6 +328,10 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     margin-right: 25px;
     border-radius: 50%;
     border: 1px solid var(--gray-222);
+}
+
+#work__section {
+    padding: 20px;
 }
 
 #contact__main {
@@ -419,6 +423,10 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     .grid {
         grid-template-columns: 1fr;
     }
+
+    #work__section {
+        padding: 0;
+    }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -428,6 +436,10 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     
     .reading-text {
         align-self: initial;
+    }
+
+    #work__section {
+        padding: 10px;
     }
 }
 
@@ -454,25 +466,6 @@ a.social-link-icon:hover, a.social-link-icon:focus {
     }
 }
 
-/* ANIMATIONS */
-/* @keyframes sun-cycle {
-    0% {
-        fill: var(--color-sun1);
-        transform: translateY(550px);
-    }
-    50% {
-        fill: var(--color-sun2);
-    }
-    100% { 
-        fill: var(--color-sun3);
-        transform: translateY(-550px);
-    }
-}
-
-#sun {
-    animation: 30s sun-cycle infinite normal linear;
-} */
-
 @keyframes cloud-move-odds {
     0% {
         transform: translate(-1520px, 0px);
@@ -489,7 +482,7 @@ a.social-link-icon:hover, a.social-link-icon:focus {
 }
 
 #cloud1, #cloud3 {
-    animation: 15s cloud-move-odds infinite alternate linear;
+    animation: 60s cloud-move-odds infinite alternate linear;
 }
 
 @keyframes cloud-move-evens {
@@ -508,7 +501,7 @@ a.social-link-icon:hover, a.social-link-icon:focus {
 }
 
 #cloud2, #cloud4 {
-    animation: 15s cloud-move-evens infinite alternate linear;
+    animation: 45s cloud-move-evens infinite alternate linear;
 }
 
 @keyframes night-day-cycle {
