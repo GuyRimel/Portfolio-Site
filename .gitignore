@@ -1,0 +1,8 @@
+# ignore stylelint config file
+.stylelint.js/
+
+# ignore node modules folder (stylelint installation)
+node_modules/
+
+# ignore package-lock.json (stylelint installation)
+package-lock.json/
