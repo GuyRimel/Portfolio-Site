@@ -285,7 +285,7 @@ button:active,
   /* background-color: var(--black-alpha80); */
   clear: both;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;;;
   text-align: center;
   padding: 10px;
   bottom: 0;
