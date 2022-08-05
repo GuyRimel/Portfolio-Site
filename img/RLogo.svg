@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+<svg viewBox="0 0 294 243" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <defs>
-    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="drop-shadow 1 10 6 6 0.5 rgba(0,0,0,0.3)">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
-      <feOffset dx="10" dy="6"/>
+    <filter id="outline-filter-2" color-interpolation-filters="sRGB" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="outline 1 1 rgba(34,34,34,1)">
+      <feMorphology in="SourceAlpha" result="dilated" operator="dilate" radius="1"/>
+      <feFlood flood-color="rgba(34,34,34,1)" result="flood"/>
+      <feComposite in="flood" in2="dilated" operator="in" result="outline"/>
+      <feMerge>
+        <feMergeNode in="outline"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="outline-filter-0" color-interpolation-filters="sRGB" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="outline 1 1 rgba(167,224,51,1)">
+      <feMorphology in="SourceAlpha" result="dilated" operator="dilate" radius="1"/>
+      <feFlood flood-color="rgba(167,224,51,1)" result="flood"/>
+      <feComposite in="flood" in2="dilated" operator="in" result="outline"/>
+      <feMerge>
+        <feMergeNode in="outline"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="drop-shadow-filter-2" color-interpolation-filters="sRGB" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="drop-shadow 1 10 8 8 0.5 rgba(0,0,0,0.3)">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="10" dy="8"/>
       <feComponentTransfer result="offsetblur">
         <feFuncA id="spread-ctrl" type="linear" slope="1"/>
       </feComponentTransfer>
@@ -14,39 +32,17 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="outline-filter-1" color-interpolation-filters="sRGB" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="outline 1 2 rgba(255,255,255,0.46)">
-      <feMorphology in="SourceAlpha" result="dilated" operator="dilate" radius="2"/>
-      <feFlood flood-color="rgba(255,255,255,0.46)" result="flood"/>
-      <feComposite in="flood" in2="dilated" operator="in" result="outline"/>
-      <feMerge>
-        <feMergeNode in="outline"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="outline-filter-2" color-interpolation-filters="sRGB" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="outline 1 1 rgba(34,34,34,1)">
-      <feMorphology in="SourceAlpha" result="dilated" operator="dilate" radius="1"/>
-      <feFlood flood-color="rgba(34,34,34,1)" result="flood"/>
-      <feComposite in="flood" in2="dilated" operator="in" result="outline"/>
-      <feMerge>
-        <feMergeNode in="outline"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="280.199" y1="68.023" x2="280.199" y2="174.565" id="gradient-2" gradientTransform="matrix(1.432719, 0, 0, 1.432719, -254.656036, -42.653046)">
-      <stop offset="0" style="stop-color: #44ffe4"/>
-      <stop offset="1" style="stop-color: black"/>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="117.622" y1="27" x2="117.622" y2="250.991" id="gradient-0">
+      <stop offset="0" style="stop-color: rgba(136, 136, 136, 1)"/>
+      <stop offset="1" style="stop-color: rgba(85, 85, 85, 1)"/>
     </linearGradient>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="280.199" y1="68.023" x2="280.199" y2="174.565" id="gradient-3" gradientTransform="matrix(1.432719, 0, 0, 1.432719, -254.656036, -42.653046)">
-      <stop offset="0" style="stop-color: #44ffe4"/>
-      <stop offset="1" style="stop-color: #aaa"/>
-    </linearGradient>
-    <filter id="motion-blur-filter-0" color-interpolation-filters="sRGB" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="motion-blur 1 4 horizontal">
-      <feGaussianBlur stdDeviation="4 0" edgeMode="none"/>
-    </filter>
   </defs>
-  <path style="fill-rule: nonzero; stroke-width: 2px; stroke: rgb(0, 0, 0); filter: url(#drop-shadow-filter-0) url(#outline-filter-1); fill: #888;" d="M 20 57.573 L 53.259 250.991 L 215.244 27 L 20 57.573 Z" bx:origin="0.537516 0.506203"/>
-  <path style="fill-rule: nonzero; stroke-width: 2px; stroke: #444; filter: url(#drop-shadow-filter-0) url(#outline-filter-1); fill: #aafff3;" d="M 48.521 77.722 L 72.702 202.243 L 109.225 151.741 L 225.875 207.449 L 135.176 116.15 L 179.326 54.803 L 48.521 77.722 Z" bx:origin="0.09492 0.560649"/>
-  <path style="stroke: rgb(0, 0, 0); fill: rgb(255, 255, 255); stroke-width: 0px; fill-opacity: 0.33; filter: url(#motion-blur-filter-0);" d="M 64.945 211.636 H 226.699 A 12 12 0 0 1 238.699 223.636 V 246.622 H 64.945 A 12 12 0 0 1 52.945 234.622 V 223.636 A 12 12 0 0 1 64.945 211.636 Z" bx:shape="rect 52.945 211.636 185.754 34.986 12 12 0 12 1@8082f2b4" bx:origin="0.160308 -2.036589"/>
-  <text style="fill: rgb(255, 255, 255); font-family: Consolas; font-size: 8.25px; white-space: pre; filter: url(#outline-filter-2);" transform="matrix(4.180334, 0, 0, 3.473254, -868.195557, -427.33078)" x="222.256" y="191.698" bx:origin="0.12783 -2.13595">Guy Rimel</text>
-  <path style="stroke: rgb(0, 0, 0); fill: #44ffe4;" d="M 224.443 206.231 L 91.304 112.625 L 178.513 55.067 L 135.489 116.114 L 224.443 206.231 Z"/>
+  <g style="filter: url(#drop-shadow-filter-2);" transform="matrix(1, 0, 0, 1, -12, -19)">
+    <path style="fill-rule: nonzero; stroke: rgb(0, 0, 0); fill: url(#gradient-0);" d="M 20 57.573 L 53.259 250.991 L 215.244 27 L 20 57.573 Z" bx:origin="0.537516 0.506203"/>
+    <g style="filter: url(#outline-filter-0);">
+      <path style="fill-rule: nonzero; fill: rgb(170, 255, 243); stroke: rgb(0, 0, 0);" d="M 48.521 77.722 L 71.795 202.848 L 109.225 151.741 L 224.4 206.2 L 135.176 116.15 L 180.233 54.383 L 48.521 77.722 Z" bx:origin="0.09492 0.560649"/>
+      <path style="fill: rgb(68, 255, 228); stroke: rgb(0, 0, 0);" d="M 224.443 206.231 L 91.304 112.625 L 180.2 54.4 L 135.489 116.114 L 224.443 206.231 Z"/>
+    </g>
+  </g>
+  <text style="fill: rgb(255, 255, 255); font-family: Consolas; font-size: 12.0924px; line-height: 19.3479px; word-spacing: -2px; white-space: pre; filter: url(#outline-filter-2);" transform="matrix(4.180334, 0, 0, 3.473254, -885.195557, -443.33078)" x="222.256" y="191.698" bx:origin="0.12783 -2.13595">Guy Rimel</text>
 </svg>

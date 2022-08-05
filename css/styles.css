@@ -8,19 +8,19 @@
   --primary-color-lightest: #aafff3;
   --secondary-color-darker: #4c1199;
   --secondary-color: #7b29e7;
-  --secondary-color-lighter: #b485f1;
+  --secondary-color-lighter: #b485f1;;
   --highlight-color: #a7e033;
 
   /* BLACKS */
-  --black-alpha10: rgba(0 0 0 10%);
-  --black-alpha20: rgba(0 0 0 20%);
-  --black-alpha30: rgba(0 0 0 30%);
-  --black-alpha40: rgba(0 0 0 40%);
-  --black-alpha50: rgba(0 0 0 50%);
-  --black-alpha60: rgba(0 0 0 60%);
-  --black-alpha70: rgba(0 0 0 70%);
-  --black-alpha80: rgba(0 0 0 80%);
-  --black-alpha90: rgba(0 0 0 90%);
+  --black-alpha10: rgba(0, 0, 0, 10%);
+  --black-alpha20: rgba(0, 0, 0, 20%);
+  --black-alpha30: rgba(0, 0, 0, 30%);
+  --black-alpha40: rgba(0, 0, 0, 40%);
+  --black-alpha50: rgba(0, 0, 0, 50%);
+  --black-alpha60: rgba(0, 0, 0, 60%);
+  --black-alpha70: rgba(0, 0, 0, 70%);
+  --black-alpha80: rgba(0, 0, 0, 80%);
+  --black-alpha90: rgba(0, 0, 0, 90%);
   --black: #000;
 
   /* GRAYS */
@@ -41,14 +41,14 @@
 
   /* WHITES */
   --white: #fff;
-  --white-alpha10: rgba(255 255 255 10%);
-  --white-alpha20: rgba(255 255 255 20%);
-  --white-alpha30: rgba(255 255 255 30%);
-  --white-alpha40: rgba(255 255 255 40%);
-  --white-alpha50: rgba(255 255 255 50%);
-  --white-alpha60: rgba(255 255 255 60%);
-  --white-alpha70: rgba(255 255 255 70%);
-  --white-alpha80: rgba(255 255 255 80%);
+  --white-alpha10: rgba(255, 255, 255, 10%);
+  --white-alpha20: rgba(255, 255, 255, 20%);
+  --white-alpha30: rgba(255, 255, 255, 30%);
+  --white-alpha40: rgba(255, 255, 255, 40%);
+  --white-alpha50: rgba(255, 255, 255, 50%);
+  --white-alpha60: rgba(255, 255, 255, 60%);
+  --white-alpha70: rgba(255, 255, 255, 70%);
+  --white-alpha80: rgba(255, 255, 255, 80%);
 
   /* ANIMATION COLORS */
   --color-sky1: #00008b;
@@ -202,17 +202,17 @@ button:active,
 
 .pop-text {
   font-size: 55px;
-  color: var(--gray-eee);
   margin: 5px;
 }
 
 .pop-text::first-letter {
   font-size: 60px;
-  color: var(--highlight-color);
+  color: var(--primary-color-darker);
 }
 
 .page-header {
   display: flex;
+  width: 100%;
   padding: 20px;
 }
 
@@ -228,7 +228,7 @@ button:active,
 
 .topLogo {
   border: none;
-  max-width: 160px;
+  max-width: 100px;
   margin: 2px;
 }
 
@@ -279,17 +279,15 @@ button:active,
 
 .about__text {
   padding: 20px 10%;
-  background-color: var(--black-alpha20);
 }
 
 .page-footer {
-  background-color: var(--black-alpha80);
+  /* background-color: var(--black-alpha80); */
   clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 10px;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -308,11 +306,13 @@ a.social-link-icon:focus {
   background-color: var(--black-alpha0);
 }
 
-.flex {
+.flex-row {
   display: flex;
+  flex-direction: row;
 }
 
 .flex-column {
+  display: flex;
   flex-direction: column;
 }
 
@@ -331,6 +331,10 @@ a.social-link-icon:focus {
 
 .align-center {
   align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 /* IDs */

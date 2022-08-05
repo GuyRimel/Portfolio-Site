@@ -8,14 +8,14 @@
         <!-- Style Links -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Inconsolata:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">
-        <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
 
-    <body class="pattern1">
+    <body class="flex-column align-center space-between">
 
         <!-- Logo and Navigation -->
-        <header class="page-header">
+        <header class="page-header pattern1">
             <img class="topLogo page-header__item" src="img/RLogo.svg" alt="Logo for Guy Rimel">
             <nav class="page-header__item">
                 <ul role="menubar" class="navigation-list">
@@ -36,18 +36,20 @@
         </header>
 
         <!-- Main Content -->
-        <main id="profile__main" class="justify-center">
+        <main id="profile__main">
             <div>
                 <img src="img/Guyatdesk550x550.jpg" alt="Guy Rimel Portrait" id="profile__portrait">
-                <div class="flex">
+                <div class="flex-row">
                     <h1 class="pop-text">Enter</h1>
                     <h1 class="pop-text">Code</h1>
                     <h1 class="pop-text">Mode...</h1>
                 </div>
-                <p class="white-text">
+                <p>
                     My name is Guy; I'm a <span class="code-text">web</span> developer from Texas.
                 </p>
-                <a class="button" href="https://codepen.io/JammyFish135/pen/GRxyLMB" target="_blank">Check out some of my code!</a>
+                <div>
+                    <a class="button" href="https://codepen.io/JammyFish135/pen/GRxyLMB" target="_blank">Check out some of my code!</a>
+                </div>
             </div>
         </main>
 
