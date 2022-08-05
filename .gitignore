@@ -88,3 +88,4 @@ node_modules/uri-js/package.json
 node_modules/util-deprecate/package.json
 node_modules/validate-npm-package-license/package.json
 README.md
+.stylelintrc.js
