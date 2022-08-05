@@ -8,7 +8,7 @@
   --primary-color-lightest: #aafff3;
   --secondary-color-darker: #4c1199;
   --secondary-color: #7b29e7;
-  --secondary-color-lighter: #b485f1;;
+  --secondary-color-lighter: #b485f1;
   --highlight-color: #a7e033;
 
   /* BLACKS */
@@ -285,7 +285,7 @@ button:active,
   /* background-color: var(--black-alpha80); */
   clear: both;
   display: flex;
-  flex-direction: column;;;
+  flex-direction: column;
   text-align: center;
   padding: 10px;
   bottom: 0;
