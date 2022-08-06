@@ -207,16 +207,13 @@ button:active,
 .navigation-list,
 .navigation-list li {
   position: relative;
-}
-
-.navigation-list li {
   list-style-type: none;
   display: inline-block;
 }
 
 .navigation-list__item {
   color: var(--white) !important;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 .profile__text,
@@ -323,6 +320,10 @@ a.social-link-icon:focus {
   margin: 0;
 }
 
+.color-primary-dk {
+  color: var(--primary-color-darker);
+}
+
 /* IDs */
 #billboard__img {
   background-color: var(--primary-color-darkest);
@@ -366,6 +367,8 @@ a.social-link-icon:focus {
 }
 
 #contact-form {
+  border: 1px solid var(--gray-333);
+  background-color: var(--gray-ccc);
   width: 400px;
   margin-bottom: 10px;
 }
