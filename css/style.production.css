@@ -430,6 +430,7 @@
   
   #cotton-field-svg {
     width: 100%;
+    padding: 10px 0;
   }
   
   #about__ground {
@@ -573,19 +574,16 @@
     0% {
       -webkit-transform: translate(-1520px, 0);
               transform: translate(-1520px, 0);
-      opacity: 0.5;
     }
   
     50% {
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0);
-      opacity: 0.75;
     }
   
     100% {
       -webkit-transform: translate(1520px, 0);
               transform: translate(1520px, 0);
-      opacity: 1;
     }
   }
   
