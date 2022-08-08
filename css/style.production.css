@@ -392,7 +392,6 @@ a.social-link-icon:focus {
 #billboard__img {
   background-color: var(--primary-color-darkest);
   width: 100%;
-  min-width: 432px;
   max-height: 300px;
   -o-object-fit: cover;
   object-fit: cover;
