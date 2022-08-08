@@ -204,7 +204,7 @@ button:active,
 
 .pop-text::first-letter {
   font-size: 60px;
-  color: var(--spark-color);
+  color: var(spar);
 }
 
 .page-header {
