@@ -177,13 +177,12 @@ button:active,
 }
 
 .pop-text {
-  font-size: 55px;
-  margin: 5px;
+  font-size: 45px;
 }
 
 .pop-text::first-letter {
-  font-size: 60px;
-  color: var(spar);
+  font-size: 55px;
+  color: var(--spark-color);
 }
 
 .page-header {
@@ -191,12 +190,11 @@ button:active,
   background-color: var(--black-alpha80);
   width: 100%;
   min-height: 100px;
-  padding: 5px;
   position: fixed;
 }
 
 .page-header__item {
-  padding: 2px 0;
+  /* padding: 2px 0; */
 }
 
 .page-header__item:last-child {
@@ -205,10 +203,8 @@ button:active,
 }
 
 .topLogo {
-  position: fixed;
   border: none;
   width: 100px;
-  padding: 2px;
 }
 
 .navigation-list,
@@ -249,10 +245,11 @@ button:active,
 .about__text * {
   margin: 0;
   padding: 0;
-  color: var(--gray-222);
 }
 
 .about__text {
+  border: 1px solid var(--gray-aaa);
+  color: var(--gray-222);
   padding: 20px 10%;
 }
 
@@ -402,7 +399,7 @@ a.social-link-icon:focus {
   background-color: var(--black);
   width: fit-content;
   text-align: center;
-  margin: 20px auto;
+  margin: 20px 0;
 }
 
 /* GRID STLYING */
@@ -505,7 +502,7 @@ a.social-link-icon:focus {
 
 #cloud1,
 #cloud3 {
-  animation: 60s cloud-move-odds infinite alternate linear;
+  animation: 60s infinite alternate linear cloud-move-odds;
 }
 
 @keyframes cloud-move-evens {
@@ -524,7 +521,7 @@ a.social-link-icon:focus {
 
 #cloud2,
 #cloud4 {
-  animation: 45s cloud-move-evens infinite alternate linear;
+  animation: 45s infinite alternate linear cloud-move-evens;
 }
 
 @keyframes cotton-fade {
@@ -538,5 +535,5 @@ a.social-link-icon:focus {
 }
 
 #cotton-group {
-  animation: 15s cotton-fade 1 normal linear;
+  animation: cotton-fade 15s;
 }
