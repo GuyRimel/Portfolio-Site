@@ -12,7 +12,9 @@
   --secondary-color: #7b29e7;
   --secondary-color-lighter: #b485f1;
   --highlight-color: #a7e033;
-  --spark-color: #f26d00;
+  --sparks-color: #f26d00;
+  --waves-color: #0069f2;
+  --fun-color: #00ad00;
 
   /* BLACKS */
   --black-alpha10: rgba(0, 0, 0, 10%);
@@ -193,10 +195,6 @@ button:active,
   position: fixed;
 }
 
-.page-header__item {
-  /* padding: 2px 0; */
-}
-
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
@@ -332,8 +330,23 @@ a.social-link-icon:focus {
   color: var(--primary-color-darker);
 }
 
-.spark {
-  color: var(--spark-color);
+.sparks {
+  padding-left: 5px;
+  color: var(--sparks-color);
+}
+
+.waves {
+  padding-left: 5px;
+  color: var(--waves-color);
+}
+
+.fun {
+  padding-left: 5px;
+  color: var(--fun-color);
+}
+
+.hide {
+  display: none;
 }
 
 /* IDs */

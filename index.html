@@ -39,8 +39,10 @@
         <img src="img/banner.png" alt="Night Sky Billboard" id="billboard__img">
 
         <!-- Main Content -->
-        <main class="flex-column align-center justify-center pad20">
-            <h1 class="pop-text">Make Sparks<span class="spark">~*</span></h1>
+        <main class="flex-column align-center justify-center">
+            <h1 onclick="toggleText()" id="phrase0" class="pop-text">Make Sparks<span class="sparks">~*</span></h1>
+            <h1 onclick="toggleText()" id="phrase1" class="pop-text hide">Make Waves<span class="waves">~~~</span></h1>
+            <h1 onclick="toggleText()" id="phrase2" class="pop-text hide">Make Fun<span class="fun">:D</span></h1>
             <img src="img/GuyWithCoffee-bw.jpg" alt="Guy Rimel Portrait" id="profile__portrait" class="mar20">
             <div>
                 <p class="text-center">
@@ -71,6 +73,7 @@
 
         <!-- BOTTOM SCRIPTS -->
         <script src="js/tota11y.min.js"></script>
+        <script src="js/main.js"></script>
 
     </body>
 </html>
