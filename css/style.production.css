@@ -95,6 +95,10 @@ a {
   padding: 0.75em 0;
 }
 
+span {
+  display: inline-block;
+}
+
 a {
   padding: 0.5em;
   text-decoration: none;
@@ -468,6 +472,62 @@ a.social-link-icon:focus {
   width: fit-content;
   text-align: center;
   margin: 20px 0;
+}
+
+#slogan0,
+#slogan1,
+#slogan2 {
+  margin: 2px;
+  border-radius: 5px;
+}
+
+#slogan0:hover,
+#slogan0:focus {
+  cursor: pointer;
+  margin: 0;
+  border: 2px inset var(--sparks-color);
+}
+
+#slogan0:active {
+  color: var(--sparks-color);
+}
+
+#slogan1:hover,
+#slogan1:focus {
+  cursor: pointer;
+  margin: 0;
+  border: 2px inset var(--waves-color);
+}
+
+#slogan1:active {
+  color: var(--waves-color);
+}
+
+#slogan2:hover,
+#slogan2:focus {
+  cursor: pointer;
+  margin: 0;
+  border: 2px inset var(--fun-color);
+}
+
+#slogan2:active {
+  color: var(--fun-color);
+}
+
+#word0,
+#word1,
+#word2 {
+  margin: 2px;
+  border-radius: 5px;
+}
+
+#word0:hover,
+#word1:hover,
+#word2:hover,
+#word0:focus,
+#word1:focus,
+#word2:focus {
+  cursor: pointer;
 }
 
 /* GRID STLYING */
