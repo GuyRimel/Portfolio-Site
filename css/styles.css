@@ -1,5 +1,3 @@
-/* stylelint-disable declaration-block-no-redundant-longhand-properties */
-
 /* ROOT AND COLOR PALETTE */
 
 :root {
@@ -232,7 +230,6 @@ button:active,
 }
 
 .profile__text {
-  /* flex: (flex-grow boolean) (flex-shrink boolean) (flex-basis starting size) */
   flex: 1 1 100px;
 }
 
@@ -281,8 +278,7 @@ a.social-link-icon:focus {
 
 .flex-row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .flex-column {
@@ -304,7 +300,13 @@ a.social-link-icon:focus {
 }
 
 .space-between {
+  display: flex;
   justify-content: space-between;
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .pad5 {
@@ -351,6 +353,10 @@ a.social-link-icon:focus {
 
 .hide {
   display: none;
+}
+
+.grid__item h2 {
+  color: var(--secondary-color-darker);
 }
 
 /* IDs */
@@ -424,6 +430,7 @@ a.social-link-icon:focus {
 #slogan2 {
   margin: 2px;
   border-radius: 5px;
+  user-select: none;
 }
 
 #slogan0:hover,
@@ -504,11 +511,7 @@ a.social-link-icon:focus {
 
   .grid__item:first-child {
     background-color: var(--gray-bbb);
-
-    /* starts in column#3 / ends at the start of cell#3 */
     grid-column: 1 / 1;
-
-    /* starts in row#1 / ends at at start of cell#3 */
     grid-row: 1 / 3;
   }
 }
