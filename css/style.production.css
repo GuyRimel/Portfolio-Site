@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 /* ROOT AND COLOR PALETTE */
@@ -107,9 +107,15 @@ a:focus {
   cursor: pointer;
 }
 
-li a:hover,
-li a:focus {
+.navigation-list li:hover,
+.navigation-list li:focus {
   background-color: var(--black);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation-list li:active {
+  background-color: var(--white);
 }
 
 main {
@@ -151,12 +157,17 @@ button,
   border-radius: 5px;
   border-bottom: 4px solid var(--black-alpha30);
   -webkit-transition: 0.33s;
+  -o-transition: 0.33s;
   transition: 0.33s;
   color: var(--black);
 }
 
 .button__secondary {
   background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+a.button__secondary {
   color: var(--white);
 }
 
@@ -168,6 +179,7 @@ button:focus,
   text-shadow: none;
   cursor: pointer;
   -webkit-transition: 0s;
+  -o-transition: 0s;
   transition: 0s;
 }
 
@@ -179,8 +191,10 @@ button:active,
   text-shadow: 1px 1px var(--black-alpha60);
   border-bottom: 1px solid var(--black-alpha30);
   -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
   transform: translateY(1px);
   -webkit-transition: 0s;
+  -o-transition: 0s;
   transition: 0s;
 }
 
@@ -278,7 +292,6 @@ button:active,
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  padding: 10px;
   bottom: 0;
   width: 100%;
 }
@@ -286,6 +299,7 @@ button:active,
 .social-link-icon {
   border: none;
   border-radius: 50%;
+  padding: 3px;
 }
 
 img.social-link-icon {
@@ -460,6 +474,7 @@ a.social-link-icon:focus {
 }
 
 #about__ground {
+  background-image: -o-linear-gradient(var(--white-alpha50) 3px, var(--gray-333) 95%, var(--white-alpha30));
   background-image: linear-gradient(var(--white-alpha50) 3px, var(--gray-333) 95%, var(--white-alpha30));
   padding-bottom: 20px;
 }

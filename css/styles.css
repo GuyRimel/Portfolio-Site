@@ -99,9 +99,15 @@ a:focus {
   cursor: pointer;
 }
 
-li a:hover,
-li a:focus {
+.navigation-list li:hover,
+.navigation-list li:focus {
   background-color: var(--black);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation-list li:active {
+  background-color: var(--white);
 }
 
 main {
@@ -143,6 +149,10 @@ button,
 
 .button__secondary {
   background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+a.button__secondary {
   color: var(--white);
 }
 
@@ -250,7 +260,6 @@ button:active,
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 10px;
   bottom: 0;
   width: 100%;
 }
@@ -258,6 +267,7 @@ button:active,
 .social-link-icon {
   border: none;
   border-radius: 50%;
+  padding: 3px;
 }
 
 img.social-link-icon {
