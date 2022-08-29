@@ -265,6 +265,11 @@ button:active,
   width: 100%;
 }
 
+.social-links-container {
+  align-self: center;
+  display: flex;
+}
+
 .social-link-icon {
   border: none;
   border-radius: 50%;
