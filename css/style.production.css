@@ -91,6 +91,7 @@ span {
 }
 
 a {
+  display: block;
   text-decoration: none;
   border-radius: 5px;
 }
