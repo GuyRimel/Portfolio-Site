@@ -8,6 +8,7 @@
 /* ROOT AND COLOR PALETTE */
 
 :root {
+  --body-color: #efefef;
   --primary-color-darkest: #00443a;
   --primary-color-darker: #076;
   --primary-color: #00ddbd;
@@ -72,6 +73,10 @@
 }
 
 /* ELEMENTS */
+body {
+  background-color: var(--body-color);
+}
+
 h1,
 h2,
 h3,
@@ -103,20 +108,26 @@ a:visited {
 a:hover,
 a:focus {
   background-color: var(--black-alpha20);
-  text-decoration: underline;
   color: var(--black);
   cursor: pointer;
 }
 
 .navigation-list li:hover,
-.navigation-list li:focus {
-  background-color: var(--black);
+.navigation-list li:focus,
+.navigation-list li a:hover,
+.navigation-list li a:focus {
+  background-color: var(--gray-444);
   border-radius: 5px;
   cursor: pointer;
 }
 
-.navigation-list li:active {
+.navigation-list li:active,
+.navigation-list li:active,
+.navigation-list li a:active,
+.navigation-list li a:active {
   background-color: var(--white);
+  color: var(--black);
+  text-decoration: none;
 }
 
 main {
@@ -140,7 +151,7 @@ form {
 }
 
 td {
-  background-color: var(--gray-eee);
+  background-color: var(--white);
   padding: 10px 20px;
 }
 
@@ -197,6 +208,7 @@ button:active,
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
+  text-decoration: none;
 }
 
 /* CLASSES */
@@ -243,6 +255,7 @@ button:active,
 .navigation-list li a {
   color: var(--white);
   padding: 0 10px;
+  text-decoration: none;
 }
 
 .profile__text,
@@ -279,6 +292,7 @@ button:active,
 .about__text {
   border: 1px solid var(--gray-aaa);
   border-radius: 5px;
+  background-color: var(--white);
   color: var(--gray-222);
   padding: 20px 10%;
 }
