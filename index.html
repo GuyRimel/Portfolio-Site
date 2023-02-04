@@ -15,7 +15,7 @@
     <body>
 
         <!-- Logo and Navigation -->
-        <header class="page-header flex-row pad5 justify-center align-center">
+        <header class="page-header flex-row justify-center align-center">
             <a href="index.html" class="page-header__item">
                 <img class="topLogo" src="img/RLogo.svg" alt="Logo for Guy Rimel">
             </a>
@@ -42,10 +42,12 @@
 
         <!-- Main Content -->
         <main class="flex-column align-center justify-center">
-            <h1 onclick="toggleSlogan()" id="slogan0" class="pop-text">Make Sparks<span class="sparks">~*</span></h1>
-            <h1 onclick="toggleSlogan()" id="slogan1" class="pop-text hide">Make Waves<span class="waves">~~~</span></h1>
-            <h1 onclick="toggleSlogan()" id="slogan2" class="pop-text hide">Make Fun<span class="fun">:D</span></h1>
-            <img src="img/GuyWithCoffee-bw.jpg" alt="Guy Rimel Portrait" id="profile__portrait" class="mar20">
+            <section>
+                <h1 onclick="toggleSlogan()" id="slogan0" class="pop-text  mb-4rem"">Make Sparks<span class="sparks">~*</span></h1>
+                <h1 onclick="toggleSlogan()" id="slogan1" class="pop-text mb-4rem hide">Make Waves<span class="waves">~~~</span></h1>
+                <h1 onclick="toggleSlogan()" id="slogan2" class="pop-text mb-4rem hide">Make Fun<span class="fun">:D</span></h1>
+            </section>
+            <img src="img/GuyWithCoffee-bw.jpg" alt="Guy Rimel Portrait" id="profile__portrait" class="mb-2rem">
             <div>
                 <p class="text-center">
                     My name is Guy; I'm a
@@ -54,7 +56,7 @@
                     <span id="word2" class="code-text hide" onclick="toggleWord()">software</span>
                     developer from Texas.
                 </p>
-                <div class="text-center pad20">
+                <div class="text-center mb-4rem">
                     <a class="splash-button" href="https://guyrimel.github.io/BestFactsEver/" target="_blank">
                         Check out some of my code!
                     </a>
