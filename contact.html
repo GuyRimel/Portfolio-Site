@@ -12,18 +12,18 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Inconsolata:wght@400;700&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
 
   <!-- Logo and Navigation -->
-  <header class="page-header flex-row justify-center align-center">
-    <a href="index.html" class="page-header__item">
-      <img class="topLogo" src="img/RLogo.svg" alt="Logo for Guy Rimel">
+  <header class="page-header">
+    <a class="logo-box" href="index.html">
+      <img class="top-logo" src="img/RLogo.svg" alt="Logo for Guy Rimel">
     </a>
-    <nav class="page-header__item">
+    <nav>
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
           <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
@@ -35,14 +35,16 @@
           <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
         </li>
         <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          <a href="contact.html" role="menuitem" class="navigation-list__item splash-underline">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
 
+  <div class="spacer"></div>
+
   <!-- BILLBOARD -->
-  <img src="img/banner.png" alt="Night Sky Billboard" id="billboard__img">
+  <!-- <img src="img/banner.png" alt="Night Sky Billboard" id="billboard__img"> -->
 
   <!-- Main Content -->
   <main class="flex-column align-center justify-center mb-4rem" id="contact__main">
