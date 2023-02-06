@@ -12,18 +12,18 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Inconsolata:wght@400;700&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
 
   <!-- Logo and Navigation -->
-  <header class="page-header flex-row justify-center align-center">
-    <a href="index.html" class="page-header__item">
-      <img class="topLogo" src="img/RLogo.svg" alt="Logo for Guy Rimel">
+  <header class="page-header">
+    <a class="logo-box" href="index.html">
+      <img class="top-logo" src="img/RLogo.svg" alt="Logo for Guy Rimel">
     </a>
-    <nav class="page-header__item">
+    <nav>
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
           <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
@@ -32,7 +32,7 @@
           <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
         </li>
         <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+          <a href="about.html" role="menuitem" class="navigation-list__item splash-underline">About</a>
         </li>
         <li role="presentation">
           <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
@@ -40,6 +40,8 @@
       </ul>
     </nav>
   </header>
+
+  <div class="spacer"></div>
 
   <!-- BILLBOARD -->
   <svg id="cotton-field-svg" width="1920.000000pt" height="350.000000pt" viewBox="0 0 1920.000000 550.000000"
@@ -2210,7 +2212,9 @@
   </svg>
   <!-- Main Content -->
   <main class="flex-column align-center justify-center mb-4rem mw-600">
-    <h1 class="pop-text mb-4rem">About Myself</h1>
+    <div class="title-box about-title-box">
+      <h1 class="pop-text about-title">About Myself</h1>
+    </div>
     <div class="about__text">
       <p>
         I'm just a Guy from the flat cotton-town of Lubbock, Texas.
