@@ -194,7 +194,8 @@ button:active,
 }
 
 .logo-box,
-.spacer {
+.spacer,
+.spacer-ground {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,6 +204,13 @@ button:active,
 
 .spacer {
   background-color: var(--primary-color-darkest);
+}
+
+.spacer-ground {
+  position: sticky;
+  top: 0;
+  background: #bc9178 url('../img/dirt.gif') no-repeat;
+  background-size: 101%;
 }
 
 .top-logo {
@@ -420,13 +428,8 @@ a.social-link-icon:focus {
   background-color: var(--primary-color-darkest);
   object-fit: cover;
   width: 100%;
-  min-width: 432px;
-  max-height: 300px;
-}
-
-#about__ground {
-  background-image: linear-gradient(var(--white-alpha50) 3px, var(--gray-333) 95%, var(--white-alpha30));
-  padding-bottom: 20px;
+  max-height: 20rem;
+  margin-bottom: -.5rem;
 }
 
 #experience-table {
