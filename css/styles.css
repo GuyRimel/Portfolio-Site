@@ -85,7 +85,7 @@ a:focus {
   color: var(--black);
 }
 
-h1:first-of-type { margin: 1rem 0; }
+h1 { margin: 1rem 0; }
 
 .navigation-list li:hover,
 .navigation-list li:focus,
@@ -397,6 +397,14 @@ a.social-link-icon:focus {
   object-fit: cover;
 }
 
+#profile__portrait { cursor: pointer; }
+
+#profile__portrait:hover,
+#profile__portrait:focus,
+#profile__portrait:active {
+  box-shadow: 0 4px 8px var(--primary-color);
+}
+
 #contact-info {
   background: #eaeaea;
   width: calc(100% - 3rem);
@@ -467,20 +475,14 @@ a.social-link-icon:focus {
 
 #slogan0:hover,
 #slogan0:focus,
-#slogan0:active {
-  background: var(--sparks-color);
-}
-
+#slogan0:active,
 #slogan1:hover,
 #slogan1:focus,
-#slogan1:active {
-  background: var(--waves-color);
-}
-
+#slogan1:active,
 #slogan2:hover,
 #slogan2:focus,
 #slogan2:active {
-  background: var(--fun-color);
+  background: var(--primary-color);
 }
 
 #word0,
