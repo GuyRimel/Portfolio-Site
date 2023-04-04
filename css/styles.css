@@ -508,7 +508,7 @@ a.social-link-icon:focus {
 
 .happy-list > li,
 .sad-list > li {
-  margin-bottom: .45em 0 .25em;
+  margin: .45em 0 .25em;
 }
 
 .happy-list > li:nth-child(1) { list-style-type: '☕ '; }
