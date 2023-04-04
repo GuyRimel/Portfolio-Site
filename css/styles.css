@@ -86,6 +86,8 @@ a:focus {
   color: var(--black);
 }
 
+h1:first-of-type { margin: 1rem 0; }
+
 .navigation-list li:hover,
 .navigation-list li:focus,
 .navigation-list li a:hover,
