@@ -72,6 +72,7 @@ span {
 }
 
 a {
+  color: var(--primary-color);
   display: block;
   text-decoration: none;
   border-radius: 3px;
@@ -344,6 +345,8 @@ a.social-link-icon:focus {
   justify-content: space-evenly;
 }
 
+.lineh-1 { line-height: 1.25em; }
+
 .mb-1rem { margin-bottom: 1rem; }
 .mb-2rem { margin-bottom: 2rem; }
 .mb-3rem { margin-bottom: 3rem; }
@@ -373,8 +376,12 @@ a.social-link-icon:focus {
   color: var(--fun-color);
 }
 
-.hide {
-  display: none;
+.hide { display: none; }
+
+.scratch-that {
+  color: #888;
+  text-decoration: line-through;
+  text-decoration-color: #f00;
 }
 
 /* IDs */
@@ -406,21 +413,20 @@ a.social-link-icon:focus {
 }
 
 #contact-info {
-  background: #eaeaea;
+  background-color: hsl(200, 10%, 98%);
   width: calc(100% - 3rem);
   max-width: 32rem;
-  border-radius: 3px;
-  padding: .66rem 1.15rem;
+  padding: 0.7rem 1.2rem;
   align-self: center;
+  border: 1px solid #dbdbdb;
   box-shadow: 0 4px 4px #0004;
 }
 
-#contact-info > span { margin-bottom: .66em; }
-#contact-info > span:last-child { margin-bottom: 0; }
-
-
 .contact-paragraph {
-  padding: 1.15rem;
+  line-height: 1.6rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid #ccc;
 }
 
 #contact-form {
@@ -434,6 +440,33 @@ a.social-link-icon:focus {
   resize: none;
   height: 6em;
   margin-bottom: 10px;
+}
+
+.contact-method {
+  background-color: hsl(200, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  border-radius: 1.6725rem;
+  border: 1px solid hsl(170, 50%, 23%);
+}
+
+.contact-method > * {
+  padding: 0.5rem 0.88rem;
+  margin: 0;
+  border-radius: inherit;
+}
+
+.contact-method > a {
+  color: black;
+  background-color: #0507091c;
+}
+
+.contact-method > a:hover,
+.contact-method > a:focus {
+  background-color: var(--primary-color);
 }
 
 #cotton-field-svg {
@@ -617,7 +650,6 @@ a.social-link-icon:focus {
   }
   
   .grid__item:first-child {
-    background-color: hsl(0, 0%, 77%);
     grid-column: 1 / 1;
   }
 }
