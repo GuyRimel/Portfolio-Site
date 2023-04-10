@@ -72,7 +72,7 @@ span {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--primary-color-darker);
   display: block;
   text-decoration: none;
   border-radius: 3px;
